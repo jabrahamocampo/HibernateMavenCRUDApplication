@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.hibernatetutorial.Stock" table="stock">
+		<meta attribute="Class-description">
+			This class contains employee details
+		</meta>
+		
+		<id name="stockId" column="stock_id" type="int">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="stockCode" column="stock_code" type="string" />
+		<property name="stockName" column="stock_name" type="string" />
+		
+	</class>
+</hibernate-mapping>
